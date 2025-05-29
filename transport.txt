@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transport Hub</title>
+<style>
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background: linear-gradient(90deg, #ff5f6d, #ffc371);
+  color: white;
+  padding: 30px 0 20px 0;
+  text-align: center;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+nav {
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  padding: 14px 0;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 24px;
+  font-size: 19px;
+  margin: 0 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 7px;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+nav a:hover {
+  background: #ffeb3b;
+  color: #222;
+  box-shadow: 0 2px 12px rgba(255,235,59,0.2);
+}
+.tabs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 12px 12px 12px;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+.tab {
+  background: linear-gradient(120deg, #2193b0 0%, #6dd5ed 100%);
+  color: white;
+  padding: 24px;
+  margin: 20px;
+  width: 31%;
+  min-width: 270px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(52,73,94,0.14);
+  transition: background 0.3s, transform 0.2s;
+}
+.tab:hover {
+  background: linear-gradient(120deg, #f7971e 0%, #ffd200 100%);
+  color: #222;
+  transform: translateY(-6px) scale(1.03);
+}
+.tab h3 {
+  margin-top: 0;
+  font-size: 1.6em;
+  letter-spacing: 0.5px;
+}
+.tab-content {
+  margin-top: 18px;
+  font-size: 1.08em;
+}
+.content {
+  display: none;
+}
+iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 16px;
+  box-shadow: 0 6px 20px rgba(33,147,176,0.13);
+}
+audio {
+  margin: 28px 0 12px 0;
+  width: 100%;
+  border-radius: 8px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 22px;
+  background: #fffbe7;
+  border-radius: 6px;
+  overflow: hidden;
+}
+table, th, td {
+  border: 1px solid #b2bec3;
+}
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+th {
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  color: white;
+  font-size: 1em;
+}
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+ul li {
+  background: #e3f6fd;
+  margin: 7px 0;
+  padding: 12px 18px;
+  border-radius: 7px;
+  color: #04506e;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(33,147,176,0.09);
+}
+footer {
+  background: linear-gradient(90deg, #11998e 0%, #38ef7d 100%);
+  color: white;
+  padding: 24px;
+  text-align: center;
+  font-size: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+.media-section {
+  background: linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%);
+  padding: 34px 10% 34px 10%;
+  text-align: center;
+  box-sizing: border-box;
+}
+.media-section h2 {
+  color: #1a237e;
+  font-size: 2em;
+  margin-bottom: 16px;
+  letter-spacing: 0.7px;
+}
+@media (max-width: 900px) {
+  .tab { width: 90%; min-width: 180px;}
+  .media-section { padding: 24px 4%;}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Transport Hub</h1>
+</header>
+<nav>
+  <a href="javascript:void(0)" onclick="showTab('tab1')">Welcome</a>
+  <a href="javascript:void(0)" onclick="showTab('tab2')">Travel Tips</a>
+  <a href="javascript:void(0)" onclick="showTab('tab3')">Vehicle Guide</a>
+  <a href="javascript:void(0)" onclick="showTab('tab4')">Route Data</a>
+  <a href="javascript:void(0)" onclick="showTab('tab5')">Traffic Trends</a>
+  <a href="javascript:void(0)" onclick="showTab('tab6')">Contact Us</a>
+</nav>
+<div class="tabs-container">
+  <div class="tab" id="tab1">
+    <h3>Welcome to Transport Hub</h3>
+    <div class="tab-content">
+      <p>Welcome to the Transport Hub, your go-to destination for travel tips, vehicle guides, route statistics, and up-to-date traffic trends. Navigate the world of transport with ease and confidence!</p>
+      <h4>Listen to Our Featured Transport Podcast</h4>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+        type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+  <div class="tab" id="tab2">
+    <h3>Travel Tips</h3>
+    <div class="tab-content">
+      <ul>
+        <li>Plan your route ahead to avoid peak traffic hours.</li>
+        <li>Choose eco-friendly transport options whenever possible.</li>
+        <li>Always check vehicle condition before a long journey.</li>
+        <li>Keep emergency contacts and essentials handy during travel.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="tab" id="tab3">
+    <h3>Vehicle Guide</h3>
+    <div class="tab-content">
+      <ul>
+        <li><strong>Cars:</strong> Best for city commutes and family travel.</li>
+        <li><strong>Buses:</strong> Cost-effective and environmentally friendly for group travel.</li>
+        <li><strong>Bicycles:</strong> Ideal for short distances and fitness enthusiasts.</li>
+        <li><strong>Trains:</strong> Fast and reliable for intercity travel.</li>
+        <li><strong>Electric Scooters:</strong> Perfect for urban micro-mobility.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="tab" id="tab4">
+    <h3>Route Data</h3>
+    <div class="tab-content">
+      <table>
+        <thead>
+          <tr>
+            <th>Route</th>
+            <th>Average Travel Time</th>
+            <th>Popular Vehicle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Downtown to Airport</td>
+            <td>40 min</td>
+            <td>Taxi</td>
+          </tr>
+          <tr>
+            <td>Main Station to City Park</td>
+            <td>15 min</td>
+            <td>Bicycle</td>
+          </tr>
+          <tr>
+            <td>Central Avenue Loop</td>
+            <td>30 min</td>
+            <td>Bus</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="tab" id="tab5">
+    <h3>Traffic Trends</h3>
+    <div class="tab-content">
+      <ul>
+        <li>City center traffic peaks between 7-9 AM and 5-7 PM.</li>
+        <li>Electric vehicle adoption is rapidly increasing in urban areas.</li>
+        <li>Weekend public transport ridership is up 15% compared to weekdays.</li>
+        <li>Bicycle lane usage has doubled in the past year.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="tab" id="tab6">
+    <h3>Contact Us</h3>
+    <div class="tab-content">
+      <p>For inquiries or suggestions, reach out to us at <a href="mailto:info@transporthub.com">info@transporthub.com</a>.</p>
+    </div>
+  </div>
+</div>
+<section class="media-section">
+  <h2>Watch: Innovations in Urban Transport</h2>
+  <iframe src="https://www.youtube.com/embed/6tF2rZniwuY"
+  allowfullscreen></iframe>
+</section>
+<footer>
+  <p>Contact us at <a href="mailto:info@transporthub.com" style="color:white;">info@transporthub.com</a></p>
+  <p>&copy; 2025 Transport Hub. All rights reserved.</p>
+</footer>
+<script>
+function showTab(tabId) {
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(tab => tab.style.display = 'none');
+  document.getElementById(tabId).style.display = 'block';
+}
+document.getElementById('tab1').style.display = 'block';
+</script>
+</body>
+</html>
