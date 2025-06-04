@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HealthyLife Medical Center</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: blue;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HealthyLife Medical Center</h1>
+    <p>Your health, our priority.</p>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Welcome to HealthyLife Medical Center, where we care for your wellbeing with professional staff and modern facilities.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>General Consultation</li>
+            <li>Pediatrics</li>
+            <li>Laboratory Tests</li>
+            <li>Vaccination</li>
+            <li>Emergency Care</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@healthylife.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Address: 123 Wellness Blvd, Care City</p>
+    </section>
+</body>
+</html>
